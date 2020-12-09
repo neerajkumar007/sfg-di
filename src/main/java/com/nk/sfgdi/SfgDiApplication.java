@@ -16,7 +16,7 @@ public class SfgDiApplication {
 		MyController myController =(MyController) mycontext.getBean("myController");
 		String test=myController.test();
 
-		System.out.println("--"+test);
+		System.out.println("--"+myController.test());
 
 		PropertyInjectionController propertyInjectionController = (PropertyInjectionController) mycontext.getBean("propertyInjectionController");
 		System.out.println(propertyInjectionController.getGreeting());
